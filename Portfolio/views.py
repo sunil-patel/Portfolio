@@ -11,4 +11,5 @@ def about(request):
 def profile(request):
     now = datetime.datetime.now()
     template = "profile.html"
+    print "this is the test"
     return render_to_response(template, {'Time': now})
