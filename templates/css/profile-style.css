@@ -1,0 +1,85 @@
+/*
+	Minimaxing 3.1 by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
+
+/*********************************************************************************/
+/* Global                                                                        */
+/*********************************************************************************/
+
+/* Basic */
+
+body {
+		font-size: 13.5pt;
+		font-family: sans-serif;
+		background-color: #e3e9dc;
+		font-family: 'Ubuntu Condensed', sans-serif;
+		color: #878e83;
+		letter-spacing: -1px;
+	}
+
+
+#pic {
+		width : 100%;
+		float : left;
+	}
+
+#image {
+	display: inline-block;
+	border-style : solid; 1px;
+	border-right-style : solid; 1px;
+	border-bottom-style : solid; 1px;
+}
+
+img {
+	width:100px; 
+	height:100px;
+	margin: 0px;
+	padding : 0px;
+}
+
+#aboutme {
+	display: inline-block;
+	vertical-align : top;
+}
+
+#menu {
+	float : left;
+	margin : 0px 0px 0px 120px;
+	hight : 100px;
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	color : #309C40;
+}
+
+#aboutmebtn {
+	float : left;
+	font-size : large;
+}
+
+#projectbtn {
+	float : left;
+	font-size : large;
+	margin-left : 30px;
+}
+
+#trainingbtn {
+	float : left;
+	font-size : large;
+	margin-left : 30px;
+}
+#socialbtn {
+	float : left;
+	font-size : large;
+	margin-left : 30px;
+}
+#contactbtn {
+	float : left;
+	font-size : large;
+	margin-left : 30px;
+}
+#techbtn {
+	float : left;
+	font-size : large;
+	margin-left : 30px;
+}
