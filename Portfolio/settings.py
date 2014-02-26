@@ -5,7 +5,8 @@ DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 BASE_DIR = os.path.dirname(os.path.realpath("Portfolio"))
-
+#BASE_DIR = os.path.realpath(os.path.dirname(__file__))
+print BASE_DIR
 ADMINS = (
     # ('Your Name', 'your_email@example.com'),
 )
@@ -76,7 +77,8 @@ STATICFILES_DIRS = (
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-    os.path.join(BASE_DIR, "templates"),
+    #os.path.join(BASE_DIR, "templates"),
+    BASE_DIR + "/Portfolio/templates", 
 
 )
 
@@ -96,6 +98,7 @@ TEMPLATE_LOADERS = (
     'django.template.loaders.filesystem.Loader',
     'django.template.loaders.app_directories.Loader',
     #'django.template.loaders.eggs.Loader',
+
 )
 
 MIDDLEWARE_CLASSES = (
@@ -118,14 +121,16 @@ TEMPLATE_DIRS = (
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
     #[os.path.join("Portfolio", 'templates')],
-    os.path.join(BASE_DIR, "templates"),    
+    #os.path.join(BASE_DIR, "templates"),
+    BASE_DIR + "/Portfolio/",  
 )
 
+ 
 INSTALLED_APPS = (
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
-    'django.contrib.sites',
+    'django.contrib.sites', 
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # Uncomment the next line to enable the admin:
